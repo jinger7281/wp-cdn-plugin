@@ -1,4 +1,7 @@
 <script src="https://cdn.bootcdn.net/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+<script>
+var plg_uri = '<?php echo $url; ?>';
+</script>
 <script src="<?php echo $url.'assets/js/main.js'; ?>"></script>
 <style>
     .item {
