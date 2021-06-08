@@ -11,15 +11,11 @@
  * License URI: https://www.apache.org/licenses/LICENSE-2.0
  */
 
-namespace zxj\cdn;
-
-$ns = 'zxj\cdn\\';
 function cdn_main_menu_page()
 {
-    global $ns;
-    \add_menu_page('CDN设置', 'CDN设置', 'manage_options', 'cdn-settings', $ns . 'cdn_main_page', 'dashicons-rest-api', 100);
+    add_menu_page('CDN设置', 'CDN设置', 'manage_options', 'cdn-settings', 'cdn_main_page', 'dashicons-rest-api', 100);
 }
-\add_action('admin_menu', $ns . 'cdn_main_menu_page');
+add_action('admin_menu', 'cdn_main_menu_page');
 function cdn_main_page()
 {
     $url = plugin_dir_url(__FILE__);
